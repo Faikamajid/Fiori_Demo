@@ -1,0 +1,5 @@
+<Core:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="aprdemo.controller.App"
+xmlns:f="sap.ui.layout.form">
+
+<Button text="Click " press="onClick"/>
+</Core:View>
