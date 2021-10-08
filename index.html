@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--returning ui5 framewrk --> 
+<script id="sap-ui-bootstrap" src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+
+data-sap-ui-libs="sap.m"
+data-sap-ui-theme="sap_bluecrystal"
+data-sap-ui-resourceroots='{
+    "aprdemo": "./"
+}'
+>
+</script>
+<script>
+    var ozara=new sap.m.Button("idButton",
+    {text:"clickme",
+    press:function()
+    {
+        alert("welcomt to https://google.com");
+window.open("https://google.com")}});
+    ozara.placeAt("spider");
+</script>
+
+<script>
+    var oView= new sap.ui.view({
+        id:"idView",
+        viewName:"view.App",
+        type:sap.ui.core.mvc.ViewType.XML
+    });
+    oView.placeAt("content");
+</script>
+
+
+<script>
+var mytextbox=new sap.m.TextArea("idtext",
+{
+    cols:5,
+    growing:true,
+    rows:2
+    
+});
+mytextbox.placeAt("third button")
+</script>
+
+
+</head>
+
+<body class="sapUiBody" >
+    <!-- sys willl place view here-->
+    wwelcome
+<div id="spider"></div>
+<div id="content"></div>
+<div id="third button"> </div>
+
+
+</body>
+</html>
